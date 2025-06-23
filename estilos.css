@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --color-fondo: #f9f9f9;
+  --color-primario: #2a9d8f;
+  --color-secundario: #264653;
+  --color-texto: #333;
+  --color-hover: #e76f51;
+  --borde-radio: 12px;
+}
+
+body {
+ 
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+header {
+  background-color: var(--color-secundario);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.h1 {
+  color: white;
+  text-decoration: underline;
+}
+
+  h2 {
+  color: var(--color-secundario);
+  text-align: center;
+}
+
+nav {
+  background: linear-gradient(90deg, var(--color-primario), var(--color-secundario));
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 50px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--color-hover);
+}
+
+main {
+  padding: 15px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.imagen-principal {
+  display: block;
+  margin: 15px auto;
+  max-width: 50%;
+  height: auto;
+}
+
+.reseña {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: var(--borde-radio);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.reseña img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--borde-radio);
+  margin-bottom: 30px;
+}
+
+aside {
+  margin: 15px 0;
+  display: flex;
+  justify-content: right;
+  gap: 0rem;
+  padding: 0rem;
+}
+
+
+aside img {
+  width: 30px;
+  margin: 5px;
+
+
+}
+
+footer {
+  background-color: var(--color-secundario);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 5px;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+
+.boton {
+  display: inline-block;
+  background-color: var(--color-primario);
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: var(--borde-radio);
+  text-decoration: none;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: var(--color-hover);
+}
+
+footer nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+  color: var(--color-hover);
+}
+
+
+
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .reseña {
+    padding: 15px;
+  }
+
+  aside img {
+    width: 30px;
+  }
+}
